@@ -64,3 +64,12 @@ function calculateBMI(mass,height){
 
 
 
+// __________________OUTPUT______________________
+
+
+// (v1) Mark has higher BMI than John. 😅
+// (v2) John has higher BMI than Mark. 😎
+
+
+
+
