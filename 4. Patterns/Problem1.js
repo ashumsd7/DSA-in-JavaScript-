@@ -45,19 +45,22 @@ function same2(arr1, arr2) {
     frequencyCounter2[val] = (frequencyCounter2[val] || 0) + 1;
   }
 
-  for (let key in frequencyCounter1) {
+  console.log('frequencyCounter1',frequencyCounter1)
+  console.log('frequencyCounter2',frequencyCounter2)
 
-    if (!(key ** 2 in frequencyCounter2)) {
-      return false;
-    }
-    if (frequencyCounter1[key] !== frequencyCounter2[key ** 2]) {
-      return false;
-    }
+  // for (let key in frequencyCounter1) {
+
+  //   if (!(key ** 2 in frequencyCounter2)) {
+  //     return false;
+  //   }
+  //   if (frequencyCounter1[key] !== frequencyCounter2[key ** 2]) {
+  //     return false;
+  //   }
    
-    console.log(frequencyCounter1, frequencyCounter2);
-  }
+  //   console.log(frequencyCounter1, frequencyCounter2);
+  // }
 
   return true
 }
 
-console.log("Result is IS ", same2([1, 2, 3, 2], [4, 4, 8, 1]));
+console.log("Result is IS ", same2([1, 5, 5], [1,25, 4]));
